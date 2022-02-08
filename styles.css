@@ -41,7 +41,10 @@ nav ul {
 }
 
 nav ul li {
+    display: flex;
     padding: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li a,
@@ -94,6 +97,7 @@ h2.light-mode,
 h3.light-mode {
     font-size: 8rem;
     color: rgb(5, 5, 5);
+    text-shadow: 0.1rem 0.2rem 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 .hero-section h2 {
@@ -101,9 +105,20 @@ h3.light-mode {
     color: rgb(231, 231, 24);
 }
 
+button {
+    color: rgb(230, 230, 230);
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+button.light-mode i {
+    color: rgba(5, 5, 5, 1);
+}
+
 .hero-section h2.light-mode {
     font-size: 4rem;
-    color: rgb(136, 136, 14);
+    color: rgb(243, 243, 43);
 }
 
 .hero-section h3 {
@@ -135,7 +150,7 @@ h3.light-mode {
     grid-column-start: 1;
     grid-column-end: 3;
     background-color: rgb(233, 69, 69);
-    box-shadow: 0.1rem 0.5rem 0.5rem 0.5rem rgba(4, 4, 4, .6);
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.3rem rgba(4, 4, 4, .6);
 }
 
 .shape-2 {
@@ -144,7 +159,7 @@ h3.light-mode {
     grid-column-start: 3;
     grid-column-end: 4;
     background-color: rgb(58, 118, 207);
-    box-shadow: 0.1rem 0.25rem 0.5rem 0.5rem rgba(4, 4, 4, .6);
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.3rem rgba(4, 4, 4, .6);
 }
 
 .shape-3 {
@@ -153,22 +168,22 @@ h3.light-mode {
     grid-column: 1;
     grid-column-end: 2;
     background-color: rgb(32, 184, 58);
-    box-shadow: 0.1rem 0.25rem 0.5rem 0.5rem rgba(4, 4, 4, .6);
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.3rem rgba(4, 4, 4, .6);
 }
 
 .shape-4 {
     background-color: rgb(225, 236, 72);
-    box-shadow: 0 0.25rem 0.5rem 0.5rem rgba(4, 4, 4, .6);
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.3rem rgba(4, 4, 4, .6);
 }
 
 .shape-5 {
     background-color: rgb(241, 197, 50);
-    box-shadow: 0.1rem 0.25rem 0.5rem 0.5rem rgba(4, 4, 4, .6);
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.3rem rgba(4, 4, 4, .6);
 }
 
 .shape-6 {
     background-color: rgb(186, 76, 219);
-    box-shadow: 0.1rem 0.25rem 0.5rem 0.5rem rgba(4, 4, 4, .6);
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.3rem rgba(4, 4, 4, .6);
 }
 
 footer {
@@ -192,4 +207,38 @@ footer h6 {
 
 footer h6.light-mode {
     color: rgb(5, 5, 5)
+}
+
+@media (max-width: 1050px) {
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li {
+        padding: 1em 2em;
+    }
+    .social-media-bar li {
+        padding: 1em 1em;
+    }
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer {
+        position: relative;
+    }
+    h1 {
+        white-space: nowrap;
+    }
+    .main-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .shapes-grid {
+        padding-top: 7em;
+    }
 }
