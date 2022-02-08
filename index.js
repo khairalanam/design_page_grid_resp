@@ -20,6 +20,41 @@ function myFunc() {
         a_tag.className = "";
     }
 
+    var a1_tag = document.getElementById("a1");
+    if (a1_tag.className === "") {
+        a1_tag.className += "light-mode";
+    } else {
+        a1_tag.className = "";
+    }
+
+    var a2_tag = document.getElementById("a2");
+    if (a2_tag.className === "") {
+        a2_tag.className += "light-mode";
+    } else {
+        a2_tag.className = "";
+    }
+
+    var a3_tag = document.getElementById("a3");
+    if (a3_tag.className === "") {
+        a3_tag.className += "light-mode";
+    } else {
+        a3_tag.className = "";
+    }
+
+    var a4_tag = document.getElementById("a4");
+    if (a4_tag.className === "") {
+        a4_tag.className += "light-mode";
+    } else {
+        a4_tag.className = "";
+    }
+
+    var a5_tag = document.getElementById("a5");
+    if (a5_tag.className === "") {
+        a5_tag.className += "light-mode";
+    } else {
+        a5_tag.className = "";
+    }
+
     var h1_tag = document.getElementById("h1");
     if (h1_tag.className === "") {
         h1_tag.className += "light-mode";
@@ -27,7 +62,7 @@ function myFunc() {
         h1_tag.className = "";
     }
 
-    var h2_tag = document.getElementById("h2");
+    var h2_tag = document.getElementById("main-logo");
     if (h2_tag.className === "") {
         h2_tag.className += "light-mode";
     } else {
@@ -53,5 +88,12 @@ function myFunc() {
         footer_tag.className += "light-mode";
     } else {
         footer_tag.className = "";
+    }
+
+    var button_tag = document.getElementById("button");
+    if (button_tag.className === "") {
+        button_tag.className += "light-mode";
+    } else {
+        button_tag.className = "";
     }
 }
